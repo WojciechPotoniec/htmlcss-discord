@@ -49,7 +49,7 @@ h1 {
     font-size: 3em;
 }
 p {
-    font-size: 19px;
+    font-size: 15px;
     line-height: 1.7;
 }
 .d-pad-bottom {
@@ -68,12 +68,8 @@ p {
 .right {
     width: 40%;
 }
-.right h2 {
-    font-size: 40px;
-    padding: 30px 130px 0 0;
-}
-.right h2 p {
-    padding: 30px 130px 0 0;
+main h2 {
+    font-size: 36px;
 }
 .bg-stars {
     background-image: url('../img/stars.svg');
@@ -137,8 +133,15 @@ main .container {
 .wave {
     background-image: url('../img/wave.svg');
     min-height: 100px;
-    background-color: #F6F6F6;
+    opacity: 0.04;
 }
+.wave-upside-down {
+    background-image: url('../img/wave.svg');
+    min-height: 100px;
+    opacity: 0.04;
+    transform: rotate(0.5turn);
+}
+
 /* buttons */ 
     a.btn {
         display: inline-block;
@@ -149,23 +152,36 @@ main .container {
         font-size: 14px;
         text-decoration: none;
     }
+    a.btn:hover {
+        box-shadow: 10px 5px 11px;
+        transition-delay: 0.5s ease-out;
+        
+    }
     a.left-btn {
         display: inline-block;
         background-color: var(--color-secondary);
         color: var(--color-primary);
-        padding: 12px 20px;
+        padding: 10px 16px;
         border-radius: 28px;
         text-decoration: none;
-        font-size: 1.5em;   
+        font-size: 20px;   
+    }
+    a.left-btn:hover {
+        box-shadow: 11px 12px 12px 3px;
+        transition-delay: 0.5s ease-out;
     }
     a.right-btn {
         display: inline-block;
         background-color: var(--color-primary);
         color: var(--color-secondary);
-        padding: 12px 20px;
+        padding: 10px 16px;
         border-radius: 28px;
         text-decoration: none;
-        font-size: 1.5em;    
+        font-size: 20px;    
+    }
+    a.right-btn:hover {
+        box-shadow: 11px 12px 12px 3px;
+        transition-delay: 0.5s ease-out;
     }
     a.left-btn, a.right-btn {
         margin: 0 10px;
@@ -191,4 +207,14 @@ main .container {
         padding: 8px 12px;
         border-radius: 20px;
         text-decoration: none;
+    }
+
+    #feature h2, #feature p {
+        padding: 35px 170px 0 0;
+    }
+    #channel h2, #channel p {
+        padding: 35px 170px 0 0;
+    }
+    #community h2, #community p {
+        padding: 35px 170px 0 0;
     }
