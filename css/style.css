@@ -30,6 +30,11 @@ header {
     background-color: var(--color-header-bg);
     color: var(--color-secondary);
 }
+.navigation {
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-header-bg);
+}
 li a {
     color: var(--color-secondary);
     text-decoration: none;
